@@ -1,0 +1,60 @@
+<! DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>Change HTML cstyle</title>
+        <style>
+            .bluebox {
+                background-color: skyblue;
+                width:auto;
+                height:100px;
+            }
+            .redbox {
+                background-color: red;
+                color:white;
+                width:inherit;
+                height:100px;
+            }
+            .greenbox {
+                background-color: greenyellow;
+                width:auto;
+                height:100px;
+            }
+            .great {
+                background-color: beige;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class = "bluebox" id="facebook">
+            Facebook
+            <p>Facebook is <span class = "great">great</span></p>
+        </div>
+        
+        <div class = "redbox" id="apple">
+            Apple
+        </div>
+        
+        <div class = "greenbox">
+            Microsoft
+        </div>
+            
+            <button id="button1">Change Facebook style</button>
+            <script>
+                document.getElementById("button1").onclick=function() {
+                    document.getElementById("facebook").style.width = '200px';
+                    document.getElementById("facebook").style.backgroundColor = 'orange';
+                }
+            </script>
+        
+        <button id="button2">Change Apple Style</button>
+            <script>
+                document.getElementById("button2").ondblclick=function() {
+                    document.getElementById("apple").style.fontFamily = 'Arial';
+                    document.getElementById("apple").style.fontSize = '3em';
+                }
+            </script>
+    </body>
+</html>
